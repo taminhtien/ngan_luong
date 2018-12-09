@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://sandbox.nganluong.vn:8088/nl30/checkout.api.nganluong.post.php
+    body:
+      encoding: US-ASCII
+      string: merchant_id=&merchant_password=&receiver_email=taminhtien1993%40gmail.com&version=3.1&function=SetExpressCheckout&order_code=123123123&total_amount=1000000&payment_method=nl&bank_code=vcb&buyer_fullname=Ta+Minh+Tien&buyer_email=taminhtien1993%40gmail.com&buyer_mobile=0937006139&order_description=Test+order&tax_amount=0&discount_amount=0&fee_shipping=0&return_url=http%3A%2F%2Flocalhost%3A3000%2Freturn_url&cancel_url=http%3A%2F%2Flocalhost%3A3000%2Fcancel_url&buyer_address=125+Dong+Van+Cong%2C+Phuong+Thanh+My+Loi%2C+Quan+2%2C+TP.+HCM&cur_code=vnd&lang_code=vi
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - sandbox.nganluong.vn:8088
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 09 Dec 2018 03:00:30 GMT
+      Server:
+      - Apache/2.2.15 (CentOS)
+      X-Powered-By:
+      - PHP/5.6.34
+      Content-Length:
+      - '340'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8" ?><result><error_code>00</error_code><token>97953-521f54f5bb134bc75b3161640f7c2bfd</token><description></description><time_limit>1544929230</time_limit><checkout_url>https://sandbox.nganluong.vn:8088/nl35/checkout/version31/index/token_code/97953-521f54f5bb134bc75b3161640f7c2bfd</checkout_url></result>
+    http_version: 
+  recorded_at: Sun, 09 Dec 2018 03:00:31 GMT
+recorded_with: VCR 4.0.0

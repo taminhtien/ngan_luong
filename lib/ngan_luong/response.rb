@@ -1,3 +1,5 @@
+require 'active_support/core_ext/hash'
+
 module NganLuong
   class Response
     attr_reader :status_code, :headers, :body
